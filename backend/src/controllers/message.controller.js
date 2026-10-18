@@ -16,6 +16,10 @@ export const getUsersForSidebar = async (req, res) => {
   }
 };
 
+export const testFunction = async (req, res) => {
+ res.status(200).json({ hi: "bye" });
+};
+
 export const getMessages = async (req, res) => {
   try {
     const { id: userToChatId } = req.params;
